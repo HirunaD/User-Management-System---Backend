@@ -23,12 +23,12 @@ app.get('/users', (req, res) => {
 
 app.post('/createuser', (req, res) => {
     controller.addUser(req.body, (callback) => {
-        res.send(callback);
+        res.send();
     });
 });
 
 app.put('/updateuser', (req, res) => {
-    controller.updateUser   (req.body, (callback) => {
+    controller.updateUser(req.body, (callback) => {
         res.send(callback);
     });
 });
