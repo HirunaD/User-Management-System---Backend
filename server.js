@@ -13,10 +13,16 @@ app.use(express.json());
 
 //import mongoose uri pw=hiruna_72, hiruT_72
 // const uri = 'mongodb+srv://hirunadesilva:hiruna_72@cluster0.ni03buq.mongodb.net/?retryWrites=true&w=majority';
-const uri = "mongodb+srv://hirunaD:hiruna72@cluster0.weki0ze.mongodb.net/?retryWrites=true&w=majority";
+//mongodb+srv://hirunaD:<password>@cluster0.weki0ze.mongodb.net/?retryWrites=true&w=majority pw=hiruna72
+//const uri = "mongodb+srv://hirunaD:hiruna72@cluster0.weki0ze.mongodb.net/?retryWrites=true&w=majority";
+//const uri = "mongodb+srv://user1:user1@cluster0.weki0ze.mongodb.net/?retryWrites=true&w=majority";\
+//const uri = `mongodb+srv://user_2:test234@cluster0.weki0ze.mongodb.net/?retryWrites=true&w=majority`;
+
+const uri = `mongodb+srv://user_3:test_123@cluster0.weki0ze.mongodb.net/?retryWrites=true&w=majority`;
 
 //connect function
 const connect = async() => {
+    //const uri = `mongodb+srv://user_2:test234@cluster0.weki0ze.mongodb.net/?retryWrites=true&w=majority`;
     try{
         await mongoose.connect(uri);
         console.log('Connected to MongoDB');
