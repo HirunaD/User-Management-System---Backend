@@ -18,7 +18,8 @@ app.use(express.json());
 //const uri = "mongodb+srv://user1:user1@cluster0.weki0ze.mongodb.net/?retryWrites=true&w=majority";\
 //const uri = `mongodb+srv://user_2:test234@cluster0.weki0ze.mongodb.net/?retryWrites=true&w=majority`;
 
-const uri = `mongodb+srv://user_3:test_123@cluster0.weki0ze.mongodb.net/?retryWrites=true&w=majority`;
+// const uri = `mongodb+srv://user_3:test_123@cluster0.weki0ze.mongodb.net/?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://hirunadesilva:hiruna_72@cluster0.ni03buq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
 //connect function
 const connect = async() => {
