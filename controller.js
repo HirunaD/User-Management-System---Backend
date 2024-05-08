@@ -13,9 +13,16 @@ const getUsers = (req, res, next) => {
 };
 
 const addUser = (req, res, next) => {
+    const {id, name, nic, email, dob, gender, city, role} = req.body;
     const user = new User({
-        id: req.body.id,
-        name: req.body.name,
+        id: id,
+        name: name,
+        nic: nic,
+        email: email,
+        dob: dob,
+        gender: gender,
+        city: city, 
+        role: role
     });
     user.save() 
         .then(response => {
@@ -27,8 +34,8 @@ const addUser = (req, res, next) => {
 };
 
 const updateUser = (req, res, next) => {
-    const {id, name} = req.body;
-    User.updateOne({id: id}, {$set: {name: name}})
+    const {id, name, nic, email, dob, gender, city, role} = req.body;
+    User.updateOne({id: id}, {$set: {name: name, nic: nic, email:email, dob: dob, gender: gender, city: city, role: role}})
         .then(response => {
             res.json({response})
         })   
